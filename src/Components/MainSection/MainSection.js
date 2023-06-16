@@ -1,9 +1,18 @@
 import React from 'react';
 import ProductContainer from './ProductContainer/ProductContainer';
 
+const style = {
+    fontSize: '25px',
+    fontWeight: '500',
+    backgroundColor: 'purple',
+    color: '#fff',
+    padding: '2px 0'
+}
+
 const MainSection = () => {
     return (
-        <div>
+        <div className='container'>
+            <h3 style={style}>Choose Any Five Items</h3>
             <ProductContainer></ProductContainer>
         </div>
     );

@@ -1,0 +1,74 @@
+[
+    {
+        "id": 52,
+        "picture": "https://www.bicyclebd.com/images/products/Veloce-Outrage-604.jpg",
+        "price": 265,
+        "name": "Veloce Outrage 604"
+    },
+    {
+        "id": 11,
+        "picture": "https://www.bicyclebd.com/images/products/Veloce%20Legion%2050%20Blue.jpg",
+        "price": 309,
+        "name": "Veloce Legion 50 (Blue)"
+    },
+    {
+        "id": 72,
+        "picture": "https://www.bicyclebd.com/images/products/saracen-tufftrax-comp-disc-29er.jpg",
+        "price": 390,
+        "name": "Core Project 29er"
+    },
+    {
+        "id": 22,
+        "picture": "https://www.bicyclebd.com/images/products/Legacy%20Black-red.jpg",
+        "price": 268,
+        "name": "Veloce Legacy (Black-Red)"
+    },
+    {
+        "id": 54,
+        "picture": "https://www.bicyclebd.com/images/products/Untitled-1.jpg",
+        "price": 212,
+        "name": "Veloce Junior Black"
+    },
+    {
+        "id": 69,
+        "picture": "https://www.bicyclebd.com/images/products/nekro-hades-35.jpg",
+        "price": 224,
+        "name": "Nekro Hades 35"
+    },
+    {
+        "id": 35,
+        "picture": "https://www.bicyclebd.com/images/products/nekro-apollo-5.jpg",
+        "price": 263,
+        "name": "Nekro Apollo 5"
+    },
+    {
+        "id": 94,
+        "picture": "https://www.bicyclebd.com/images/products/Phoenix%20Alloy%2021%20Speed%20Bicycle%20For%20Men%20Mixed.jpg",
+        "price": 356,
+        "name": "Phoenix Alloy 21 Speed"
+    },
+    {
+        "id": 57,
+        "picture": "https://www.bicyclebd.com/images/products/giant-revel-1.jpg",
+        "price": 278,
+        "name": "Giant Revel 1"
+    },
+    {
+        "id": 44,
+        "picture": "https://www.bicyclebd.com/images/products/ghost-4900-race.jpg",
+        "price": 259,
+        "name": "Ghost 4900 Race"
+    },
+    {
+        "id": 93,
+        "picture": "https://www.bicyclebd.com/images/products/Veloce-Rival.jpg",
+        "price": 369,
+        "name": "Veloce Rival"
+    },
+    {
+        "id": 73,
+        "picture": "https://www.bicyclebd.com/images/products/Valoce-Static.jpg",
+        "price": 208,
+        "name": "Veloce Static"
+    }
+]
