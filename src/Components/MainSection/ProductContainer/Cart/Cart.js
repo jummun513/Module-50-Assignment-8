@@ -8,6 +8,8 @@ const Cart = ({ choose }) => {
             {
                 choose.map((each, idx) => <Item key={idx} each={each}></Item>)
             }
+            <button className='choose'>Choose One</button>
+            <button className='clear'>Choose again</button>
         </div>
     );
 };
