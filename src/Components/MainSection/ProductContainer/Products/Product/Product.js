@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import './Product.css'
 
-const Product = (props) => {
+const Product = ({ product, handleAddToCart }) => {
 
-    const { name, picture, price } = props.product; //destructuring
+    const { name, picture, price } = product; //destructuring
 
     return (
         <div>
@@ -13,7 +13,7 @@ const Product = (props) => {
                 <img src={picture} alt="" />
                 <h4>{name.length < 20 ? name : name.slice(0, 20)}</h4>
                 <p>Price : ${price}</p>
-                <button>
+                <button onClick={() => handleAddToCart(product)}>
                     Add To Cart &nbsp;
                     <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
                 </button>
