@@ -1,15 +1,15 @@
 import React from 'react';
 import './Cart.css'
 
-const Cart = ({ choose }) => {
+const Cart = ({ choose, chooseRandomly, chooseAgain }) => {
     return (
         <div className='choose-container'>
             <h3>Your selected Items</h3>
             {
                 choose.map((each, idx) => <Item key={idx} each={each}></Item>)
             }
-            <button className='choose'>Choose One</button>
-            <button className='clear'>Choose again</button>
+            <button onClick={() => chooseRandomly()} className='choose'>Choose One</button>
+            <button onClick={() => chooseAgain()} className='clear'>Choose again</button>
         </div>
     );
 };

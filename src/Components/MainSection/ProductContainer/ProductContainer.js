@@ -14,39 +14,39 @@ const ProductContainer = () => {
 
 
 
-    const [choose, setChoose] = useState([]);
     const [cart, setCart] = useState([]);
+    const [choose, setChoose] = useState([]);
+
+
+    const chooseRandomly = () => {
+        if (cart.length !== 0) {
+            const value = Math.random();
+            const result = Math.floor(value * (cart.length));
+            const output = cart[result];
+            setCart([]);
+            setChoose([output]);
+        }
+
+    }
 
     const handleAddToCart = (product) => {
         let newCart = [];
-        const exists = choose.find(item => item.id === product.id);
+        const exists = cart.find(item => item.id === product.id);
         if (!exists) {
             product.amount = 1;
-            newCart = [...choose, product];
+            newCart = [...cart, product];
         }
         else {
-            const rest = choose.filter(item => item.id !== product.id);
+            const rest = cart.filter(item => item.id !== product.id);
             exists.amount = exists.amount + 1;
             newCart = [...rest, exists];
         }
-        // if (Array.isArray(product) === true) {
-        //     const value = Math.random();
-        //     const result = Math.floor(value * cart.length);
-        //     const output = cart[result];
-        //     setChoose(output);
-        //     setCart([]);
-        // }
-        // else {
-        //     const newCart = [...cart, product];
-        //     setCart(newCart);
-        // }
-        setChoose(newCart);
+        setCart(newCart);
     }
 
-    console.log(choose);
 
     // choose again 
-    const clearAll = () => {
+    const chooseAgain = () => {
         setCart([]);
         setChoose([]);
     }
@@ -54,7 +54,7 @@ const ProductContainer = () => {
     return (
         <div className='product-container'>
             <Products products={products} handleAddToCart={handleAddToCart}></Products>
-            <Cart choose={choose}></Cart>
+            <Cart choose={cart.length === 0 ? choose : cart} chooseRandomly={chooseRandomly} chooseAgain={chooseAgain}></Cart>
         </div>
     );
 };
