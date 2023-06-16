@@ -6,7 +6,8 @@ const style = {
     fontWeight: '500',
     backgroundColor: 'purple',
     color: '#fff',
-    padding: '2px 0'
+    padding: '2px 0',
+    marginBottom: '0'
 }
 
 const MainSection = () => {

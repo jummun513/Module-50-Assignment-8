@@ -1,4 +1,4 @@
 .product-container {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 10fr 4fr;
 }

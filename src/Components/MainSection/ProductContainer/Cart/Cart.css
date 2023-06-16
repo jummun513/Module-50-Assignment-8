@@ -1,4 +1,6 @@
 .choose-container {
+    position: sticky;
+    top: 0;
     background-color: plum;
-    height: calc(100vh - 202.9px);
+    height: 100vh;
 }
