@@ -11,7 +11,7 @@ const Product = (props) => {
         <div>
             <div className='card'>
                 <img src={picture} alt="" />
-                <h4>{name}</h4>
+                <h4>{name.length < 20 ? name : name.slice(0, 20)}</h4>
                 <p>Price : ${price}</p>
                 <button>
                     Add To Cart &nbsp;

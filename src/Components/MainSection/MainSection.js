@@ -7,7 +7,9 @@ const style = {
     backgroundColor: 'purple',
     color: '#fff',
     padding: '2px 0',
-    marginBottom: '0'
+    marginBottom: '0',
+    position: 'sticky',
+    top: '0'
 }
 
 const MainSection = () => {

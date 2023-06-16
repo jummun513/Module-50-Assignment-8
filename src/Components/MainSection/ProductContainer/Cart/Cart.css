@@ -1,6 +1,6 @@
 .choose-container {
     position: sticky;
-    top: 0;
+    top: 41px;
     background-color: plum;
     height: 100vh;
 }
